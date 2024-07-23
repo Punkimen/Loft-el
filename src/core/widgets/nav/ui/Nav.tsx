@@ -1,6 +1,6 @@
-import s from "./Nav.module.css";
 import Link from "next/link";
 import {Animate} from "@/core/shared";
+import s from "./Nav.module.css";
 
 const links = [
   {
