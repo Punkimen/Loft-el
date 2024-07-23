@@ -20,7 +20,7 @@ import s from "./GalleryCirlce.module.css";
 
 const images = [img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8, img_9, img_10, img_11, img_12];
 const setStyles = (index: number, size: number, totalImages: number): CSSProperties => {
-  const angle = (360 / totalImages) * index - 190;
+  const angle = (360 / totalImages) * index - 90;
   // 172 - это ширина картинки, пока захардкодил, мб подставлять динамически
   const radius = size / 2 - 172 / 2;
   const centerX = size / 2;
@@ -28,7 +28,6 @@ const setStyles = (index: number, size: number, totalImages: number): CSSPropert
 
   const x = centerX + radius * Math.cos(angle * (Math.PI / 180));
   const y = centerY + radius * Math.sin(angle * (Math.PI / 180));
-
   return {
     position: "absolute",
     top: `${y}px`,
@@ -39,30 +38,32 @@ const setStyles = (index: number, size: number, totalImages: number): CSSPropert
 
 export const GalleryCirlce = () => {
   const [size, setSize] = useState(0);
+  const [mount, setMount] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const parallax = useParallax<HTMLDivElement>({
-    rotate: [0, 180],
+    rotate: [-90, 90],
   });
   useEffect(() => {
     if (!ref.current) return;
     const width = ref.current.getBoundingClientRect().width;
+    setMount(true);
     setSize(width);
+
+    return () => setMount(false);
   }, []);
 
   return (
     <section className={cn(s.gallery, "container")}>
       <div className={s.wrapper} ref={ref}>
         <div ref={parallax.ref} className={s.images}>
-          {images.map((img, index) => (
-            <Animate key={img.src} anim={"opacity"} delay={index * 100}>
-              <Image
-                style={setStyles(index, size, images.length)}
-                className={s.img}
-                src={img}
-                alt={`img ${index + 1}`}
-              />
-            </Animate>
-          ))}
+          {mount &&
+            images.map((img, index) => (
+              <Animate key={img.src} anim={"opacity"} delay={index * 100}>
+                <div className={s.img} style={setStyles(index, size, images.length)}>
+                  <Image style={{rotate: `${index * 30}deg`}} src={img} alt={`img ${index + 1}`} />
+                </div>
+              </Animate>
+            ))}
         </div>
         <Animate anim={"opacity"} delay={1000}>
           <Title tag={"h2"} className={s.title}>
