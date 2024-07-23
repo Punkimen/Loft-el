@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "eslint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "eslintfix": "eslint --fix --ext .ts,.tsx ."
   },
   "dependencies": {
     "next": "14.2.5",
