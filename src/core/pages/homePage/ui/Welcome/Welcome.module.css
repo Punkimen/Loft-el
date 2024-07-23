@@ -1,0 +1,35 @@
+.welcome{
+	margin-bottom: 210px;
+}
+.content {
+	max-width: 1030px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.title {
+	color: #D78F89FF;
+
+	@supports (--css: variables) {
+		background: #D4C9C1;
+		background: linear-gradient(54deg, #e8dccc 0%, #daa9a5 19.61%, #d78f89 53.19%, #c7958a 100%);
+		color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+
+		* {
+			background: inherit;
+		}
+	}
+}
+
+.decor{
+	font-family: var(--font-Artist);
+	font-size: 67px;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	color: var(--color-secondary);
+	rotate: -11deg;
+}

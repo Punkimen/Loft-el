@@ -1,0 +1,30 @@
+.nav {
+	font-size: 14px;
+	font-family: var(--font-SFPro);
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 36px 30px;
+	z-index: 9;
+}
+
+.list {
+	li {
+		line-height: 1.35em;
+		list-style: none;
+
+		&:nth-child(3n) {
+			margin-bottom: 15px;
+		}
+	}
+
+	a {
+		transition: color ease-in-out .3s;
+
+		&:hover {
+			color: var(--color-secondary);
+		}
+	}
+}

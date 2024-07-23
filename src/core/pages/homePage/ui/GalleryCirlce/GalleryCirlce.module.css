@@ -1,0 +1,45 @@
+.wrapper {
+	position: relative;
+	max-width: 1256px;
+	width: 100%;
+	aspect-ratio: 1;
+	margin: 0 auto;
+}
+.parallax{
+	transform-origin: 50% 50%;
+}
+.images {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.img {
+	display: block;
+	width: 172px;
+	height: 172px;
+	border-radius: 19px;
+	position: absolute;
+	transform: translate(100%, -50%);
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		transform-origin: 50% 50%;
+	}
+}
+
+.title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 390px;
+	width: 100%;
+	transform-origin: 50% 50%;
+}

@@ -1,0 +1,36 @@
+.overflow {
+	overflow: hidden;
+}
+
+.animate {
+	transition: all cubic-bezier(.29, .54, .29, .93) 0.8s,
+	opacity cubic-bezier(.62, -0.01, 1, 1) 0.8s;
+
+	&.opacity {
+		opacity: 0;
+
+		&.animated {
+			opacity: 1;
+		}
+	}
+
+	&.fadeUp {
+		opacity: 0;
+		transform: translateY(100px);
+
+		&.animated {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	&.skewDown{
+		opacity: 0;
+		transform: translate3d(0, -50px, 0) skewY(3deg);
+
+		&.animated {
+			opacity: 1;
+			transform: translate3d(0,0, 0) skewY(0);
+		}
+	}
+}
