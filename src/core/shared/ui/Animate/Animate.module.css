@@ -3,34 +3,54 @@
 }
 
 .animate {
-	transition: all cubic-bezier(.29, .54, .29, .93) 0.8s,
-	opacity cubic-bezier(.62, -0.01, 1, 1) 0.8s;
+	opacity: 0;
 
 	&.opacity {
-		opacity: 0;
-
 		&.animated {
-			opacity: 1;
+			animation: opacityAnimation cubic-bezier(.29, .54, .29, .93) 0.8s forwards;
 		}
 	}
 
 	&.fadeUp {
-		opacity: 0;
-		transform: translateY(100px);
-
 		&.animated {
-			opacity: 1;
-			transform: translateY(0);
+			animation: fadeUpAnimation cubic-bezier(.29, .54, .29, .93) 0.8s forwards;
 		}
 	}
 
-	&.skewDown{
+	&.skewDown {
+		&.animated {
+			animation: skewDownAnimation cubic-bezier(.29, .54, .29, .93) 0.8s forwards;
+		}
+	}
+}
+
+@keyframes opacityAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeUpAnimation {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes skewDownAnimation {
+	0% {
 		opacity: 0;
 		transform: translate3d(0, -50px, 0) skewY(-20deg);
-
-		&.animated {
-			opacity: 1;
-			transform: translate3d(0,0, 0) skewY(0);
-		}
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0) skewY(0);
 	}
 }

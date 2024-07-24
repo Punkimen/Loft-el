@@ -30,7 +30,7 @@ export const Animate: FC<IAnimateProps> = ({delay, className, children, options,
   const SimpleComponent = (
     <div
       ref={ref}
-      style={{transitionDelay: `${delay || 0}ms`}}
+      style={{animationDelay: `${delay || 0}ms`}}
       className={cn(s.animate, className, s[anim], inView && s.animated)}
     >
       {children}
@@ -40,7 +40,7 @@ export const Animate: FC<IAnimateProps> = ({delay, className, children, options,
   const OverflowComponent = (
     <div ref={ref} className={cn(s.overflow)}>
       <div
-        style={{transitionDelay: `${delay || 0}ms`}}
+        style={{animationDelay: `${delay || 0}ms`}}
         className={cn(s.animate, className, s[anim], inView && s.animated)}
       >
         {children}
