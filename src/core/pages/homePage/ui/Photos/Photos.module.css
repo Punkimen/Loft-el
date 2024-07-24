@@ -1,0 +1,42 @@
+.section {
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+
+.content {
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto 120px;
+}
+
+.title {
+	margin-bottom: 130px;
+	max-width: 770px;
+	width: 100%;
+}
+.columns{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 35px;
+}
+.photos{
+	position: relative;
+	display: grid;
+	grid-template-columns: 38.54vw 38.54vw 38.54vw;
+	gap: 30px;
+	rotate: -3deg;
+}
+
+.img{
+	border-radius: 26px;
+	max-height: 23.64vw;
+	overflow: hidden;
+
+img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+}

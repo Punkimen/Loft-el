@@ -58,13 +58,11 @@ export const GalleryCirlce = () => {
         <div ref={parallax.ref} className={s.images}>
           {mount && (
             <>
-              <Animate anim={"opacity"}>
-                {images.map((img, index) => (
-                  <div key={img.src} className={s.img} style={setStyles(index, size, images.length)}>
-                    <Image style={{rotate: `${index * 30}deg`}} src={img} alt={`img ${index + 1}`} />
-                  </div>
-                ))}
-              </Animate>
+              {images.map((img, index) => (
+                <div key={img.src} className={s.img} style={setStyles(index, size, images.length)}>
+                  <Image style={{rotate: `${index * 30}deg`}} src={img} alt={`img ${index + 1}`} />
+                </div>
+              ))}
             </>
           )}
         </div>
