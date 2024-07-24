@@ -15,6 +15,7 @@ interface IAnimateProps {
     root?: Element;
     triggerOnce?: boolean;
     threshold?: number; // 0 to 1
+    rootMargin?: string;
   };
 }
 
@@ -23,8 +24,9 @@ const animWithOverflow: AnimType[] = ["fadeUp"];
 export const Animate: FC<IAnimateProps> = ({delay, className, children, options, anim}) => {
   const {ref, inView} = useInView({
     root: options?.root,
-    triggerOnce: options?.triggerOnce || true,
-    threshold: options?.threshold || 0.1,
+    triggerOnce: options?.triggerOnce ?? true,
+    threshold: options?.threshold ?? 0.1,
+    rootMargin: options?.rootMargin ?? "",
   });
 
   const SimpleComponent = (

@@ -56,20 +56,23 @@ export const GalleryCirlce = () => {
     <section className={cn(s.gallery, "container")}>
       <div className={s.wrapper} ref={ref}>
         <div ref={parallax.ref} className={s.images}>
-          {mount &&
-            images.map((img, index) => (
-              <Animate key={img.src} anim={"opacity"} delay={index * 100}>
-                <div className={s.img} style={setStyles(index, size, images.length)}>
-                  <Image style={{rotate: `${index * 30}deg`}} src={img} alt={`img ${index + 1}`} />
-                </div>
+          {mount && (
+            <>
+              <Animate anim={"opacity"}>
+                {images.map((img, index) => (
+                  <div key={img.src} className={s.img} style={setStyles(index, size, images.length)}>
+                    <Image style={{rotate: `${index * 30}deg`}} src={img} alt={`img ${index + 1}`} />
+                  </div>
+                ))}
               </Animate>
-            ))}
+            </>
+          )}
         </div>
-        <Animate anim={"opacity"} delay={1000}>
-          <Title tag={"h2"} className={s.title}>
+        <Title tag={"h2"} className={s.title}>
+          <Animate anim={"opacity"}>
             История, традиции и&nbsp;культурный контекст: полное погружение в атмосферу места
-          </Title>
-        </Animate>
+          </Animate>
+        </Title>
       </div>
     </section>
   );

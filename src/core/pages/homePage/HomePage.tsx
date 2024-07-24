@@ -6,7 +6,7 @@ export const HomePage = () => {
     <>
       <Welcome />
       <GalleryCirlce />
-      <div style={{height: "100vh"}}></div>
+      <div style={{height: "1000vh"}}></div>
     </>
   );
 };
