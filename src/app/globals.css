@@ -35,9 +35,6 @@ body {
 	background-color: var(--color-bg);
 	color: #fff;
 	font-family: var(--font-Cormorant);
-	@media (--md-desktop) {
-		background: #0c0;
-	}
 }
 
 a {
