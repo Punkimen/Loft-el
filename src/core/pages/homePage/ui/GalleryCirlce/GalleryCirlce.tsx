@@ -67,7 +67,7 @@ export const GalleryCirlce = () => {
           )}
         </div>
         <Title tag={"h2"} className={s.title}>
-          <Animate anim={"opacity"}>
+          <Animate as={"span"} anim={"opacity"}>
             История, традиции и&nbsp;культурный контекст: полное погружение в атмосферу места
           </Animate>
         </Title>

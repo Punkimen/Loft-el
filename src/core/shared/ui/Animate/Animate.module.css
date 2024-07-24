@@ -1,13 +1,15 @@
 .overflow {
 	overflow: hidden;
+	display: block;
 }
 
 .animate {
 	opacity: 0;
+	display: block;
 
 	&.opacity {
 		&.animated {
-			animation: opacityAnimation cubic-bezier(.29, .54, .29, .93) 0.8s forwards;
+			animation: opacityAnimation cubic-bezier(.97,.19,.63,.91) 0.8s forwards;
 		}
 	}
 
