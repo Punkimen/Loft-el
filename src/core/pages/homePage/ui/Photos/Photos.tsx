@@ -1,8 +1,8 @@
 import s from "./Photos.module.css";
 import {Animate, Text, Title} from "@/core/shared";
-import photo_1 from "@/public/img/homePage/photos/photo_1.jpg";
-import photo_2 from "@/public/img/homePage/photos/photo_2.jpg";
-import photo_3 from "@/public/img/homePage/photos/photo_3.jpg";
+import photo_1 from "@/core/app/assets/img/homePage/photos/photo_1.jpg";
+import photo_2 from "@/core/app/assets/img/homePage/photos/photo_2.jpg";
+import photo_3 from "@/core/app/assets/img/homePage/photos/photo_3.jpg";
 import Image from "next/image";
 import {ParallaxComponent} from "@/core/shared/ui/Parallax/Parallax";
 

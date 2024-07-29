@@ -29,12 +29,17 @@ html,
 body {
 	max-width: 100vw;
 	overflow-x: hidden;
+
 }
 
 body {
 	background-color: var(--color-bg);
 	color: #fff;
 	font-family: var(--font-Cormorant);
+
+	@media (--md-pad) {
+		background: #0c0;
+	}
 }
 
 a {
