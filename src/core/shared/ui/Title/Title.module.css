@@ -1,5 +1,5 @@
-.title{
-	text-align: center;
-	font-family: var(--font-Lithium);
-	line-height: 1em;
+.title {
+  font-family: var(--font-Lithium);
+  line-height: 1em;
+  text-align: center;
 }

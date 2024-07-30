@@ -1,0 +1,56 @@
+.section {
+  padding-bottom: 340px;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 160px;
+  font-weight: 400;
+  line-height: 164px;
+  text-transform: uppercase;
+}
+
+.images-block {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 100px;
+  text-align: center;
+  translate: 0 -10%;
+}
+
+.interior {
+  width: 410px;
+  height: 570px;
+  margin: 0 auto;
+  border-radius: 25px;
+  rotate: 2deg;
+}
+
+.backGround {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  width: 410px;
+  height: 570px;
+  background: black;
+  border-radius: 25px;
+  rotate: 11deg;
+  translate: -50%;
+}
+
+.textColumn {
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 133%;
+  text-align: center;
+}

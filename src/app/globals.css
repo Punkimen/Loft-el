@@ -1,70 +1,69 @@
 @custom-media --md-desktop (max-width: 1440px);
-
 @custom-media --md-laptop (max-width: 1200px);
-
 @custom-media --md-pad (max-width: 992px);
-
 @custom-media --md-medium (max-width: 768px);
-
 @custom-media --md-small (max-width: 568px);
-
 @custom-media --md-ex-small (max-width: 412px);
 
 :root {
-	--color-bg: #071C11;
-	--color-secondary: #87B095;
+  --color-bg: #071c11;
+  --color-secondary: #87b095;
 }
 
-*, h1, h2, h3, h4, h5, h6, *:after, *:before {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 html,
 body {
-	max-width: 100vw;
-	overflow-x: hidden;
-
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
-	background-color: var(--color-bg);
-	color: #fff;
-	font-family: var(--font-Cormorant);
-
-	@media (--md-pad) {
-		background: #0c0;
-	}
+  font-family: var(--font-Cormorant);
+  color: #fff;
+  background-color: var(--color-bg);
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
-ul, li {
-	list-style: none;
+ul,
+li {
+  list-style: none;
 }
 
 .container {
-	width: 100%;
-	padding-left: 30px;
-	padding-right: 30px;
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 h1 {
-	font-size: 130px;
+  font-size: 130px;
 }
 
 h2 {
-	font-size: 60px;
+  font-size: 60px;
 }
 
 main {
-	padding-top: 150px;
+  padding-top: 150px;
 }

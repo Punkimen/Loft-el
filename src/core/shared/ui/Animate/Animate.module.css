@@ -1,58 +1,61 @@
 .overflow {
-	overflow: hidden;
-	display: block;
+  display: block;
+  overflow: hidden;
 }
 
 .animate {
-	opacity: 0;
-	display: block;
+  display: block;
+  opacity: 0;
 
-	&.opacity {
-		&.animated {
-			animation: opacityAnimation cubic-bezier(.97,.19,.63,.91) 0.8s forwards;
-		}
-	}
+  &.opacity {
+    &.animated {
+      animation: opacityAnimation cubic-bezier(0.97, 0.19, 0.63, 0.91) 0.8s forwards;
+    }
+  }
 
-	&.fadeUp {
-		&.animated {
-			animation: fadeUpAnimation cubic-bezier(.29, .54, .29, .93) 0.8s forwards;
-		}
-	}
+  &.fadeUp {
+    &.animated {
+      animation: fadeUpAnimation cubic-bezier(0.29, 0.54, 0.29, 0.93) 0.8s forwards;
+    }
+  }
 
-	&.skewDown {
-		&.animated {
-			animation: skewDownAnimation cubic-bezier(.29, .54, .29, .93) 0.8s forwards;
-		}
-	}
+  &.skewDown {
+    &.animated {
+      animation: skewDownAnimation cubic-bezier(0.29, 0.54, 0.29, 0.93) 0.8s forwards;
+    }
+  }
 }
 
 @keyframes opacityAnimation {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeUpAnimation {
-	0% {
-		opacity: 0;
-		transform: translateY(100px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes skewDownAnimation {
-	0% {
-		opacity: 0;
-		transform: translate3d(0, -50px, 0) skewY(-20deg);
-	}
-	100% {
-		opacity: 1;
-		transform: translate3d(0, 0, 0) skewY(0);
-	}
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -50px, 0) skewY(-20deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) skewY(0);
+  }
 }

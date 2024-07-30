@@ -1,58 +1,56 @@
 .header {
-	position: relative;
-	display: flex;
-	justify-content: flex-end;
-	padding-top: 36px;
-	font-size: 14px;
-	font-family: var(--font-SFPro);
-	font-weight: 500;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 36px;
+  font-family: var(--font-SFPro);
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .logo {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	text-transform: uppercase;
-	width: 160px;
-	height: 140px;
-	border: 1px solid rgba(255, 255, 255, .15);
-	border-top: none;
-	border-radius: 0 0 93px 93px;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	padding: 28px 25px 20px;
-	text-align: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  place-content: center center;
+  width: 160px;
+  height: 140px;
+  padding: 28px 25px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-top: none;
+  border-radius: 0 0 93px 93px;
+  transform: translateX(-50%);
 }
 
 .handle {
-	font-weight: 500;
-	color: rgba(135, 176, 149, 0.35);
-	text-align: right;
+  font-weight: 500;
+  color: rgb(135 176 149 / 35%);
+  text-align: right;
 }
 
 .phone {
-	margin-bottom: 5px;
-	transition: color ease-in-out .3s;
+  margin-bottom: 5px;
+  transition: color ease-in-out 0.3s;
 
-	&:hover {
-		color: var(--color-secondary);
-	}
+  &:hover {
+    color: var(--color-secondary);
+  }
 }
 
 .switch {
-	display: flex;
-	justify-content: flex-end;
-	gap: 7px;
+  display: flex;
+  gap: 7px;
+  justify-content: flex-end;
 }
 
 .lang {
-	text-transform: uppercase;
-	transition: color ease-in-out .3s;
+  text-transform: uppercase;
+  transition: color ease-in-out 0.3s;
 
-	&:hover {
-		color: var(--color-secondary);
-	}
+  &:hover {
+    color: var(--color-secondary);
+  }
 }
-

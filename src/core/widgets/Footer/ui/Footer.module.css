@@ -1,0 +1,54 @@
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  padding: 40px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 40px 0;
+  border-top: 1px solid #ffffff25;
+}
+
+.list {
+  width: 150px;
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-transform: uppercase;
+    transition: color ease-in-out 0.3s;
+
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.policy {
+  display: flex;
+  gap: 10px;
+  color: #ffffff15;
+
+  --color-secondary: ffffff15;
+}

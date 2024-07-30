@@ -55,7 +55,7 @@ export const GalleryCirlce = () => {
   return (
     <section className={cn(s.gallery, "container")}>
       <div className={s.wrapper} ref={ref}>
-        <Image src={"/img_1.jpg"} alt={"test"} />
+        <img src={"/img_1.jpg"} alt={"test"} />
         <div ref={parallax.ref} className={s.images}>
           {mount && (
             <>

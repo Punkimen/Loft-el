@@ -1,0 +1,67 @@
+.section {
+  padding-bottom: 340px;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 100px;
+}
+
+.title {
+  width: 100%;
+  max-width: 600px;
+  font-weight: 400;
+}
+
+.images-block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 110px;
+  text-align: center;
+}
+
+.img {
+  &:hover {
+    z-index: 1;
+    transform: rotate(3deg) scale(1.1);
+  }
+
+  &_first {
+    rotate: -17deg;
+  }
+
+  &_second {
+    rotate: 4deg;
+  }
+
+  &_third {
+    rotate: -2deg;
+  }
+
+  &_fourth {
+    rotate: -6deg;
+  }
+
+  &_fifth {
+    rotate: 12deg;
+  }
+}
+
+.interior {
+  width: 410px;
+  height: 570px;
+  margin: 0 auto;
+  border-radius: 25px;
+  rotate: 2deg;
+}
+
+.textColumn {
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 133%;
+  text-align: center;
+}

@@ -1,11 +1,11 @@
 .btn {
-	font-size: inherit;
-	font-family: var(--font-SFPro);
-	cursor: pointer;
-	color: inherit;
+  font-family: var(--font-SFPro);
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
 
-	&_reset {
-		background: transparent;
-		border: none;
-	}
+  &_reset {
+    background: transparent;
+    border: none;
+  }
 }

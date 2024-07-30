@@ -1,0 +1,49 @@
+.gallery {
+  margin-bottom: 350px;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1256px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+
+.parallax {
+  transform-origin: 50% 50%;
+}
+
+.images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  position: absolute;
+  display: block;
+  width: 172px;
+  height: 172px;
+  transform: translate(100%, -50%);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 19px;
+    transform-origin: 50% 50%;
+  }
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 390px;
+  transform: translate(-50%, -50%);
+}
