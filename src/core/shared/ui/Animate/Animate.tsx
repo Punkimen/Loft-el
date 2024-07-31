@@ -4,7 +4,7 @@ import {ElementType, FC, ReactNode} from "react";
 import cn from "classnames";
 import s from "./Animate.module.css";
 
-type AnimType = "opacity" | "fadeUp" | "skewDown";
+type AnimType = "opacity" | "fadeUp" | "skewDown" | "bounce";
 
 interface IAnimateProps {
   anim: AnimType;

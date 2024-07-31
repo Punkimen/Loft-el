@@ -1,4 +1,7 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-recess-order"],
-  "rules": {}
+  "rules": {
+    "function-name-case": null,
+    "function-no-unknown": [true, {"ignoreFunctions": ["toVw"]}]
+  }
 }

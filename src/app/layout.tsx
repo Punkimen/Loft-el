@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import cn from "classnames";
 import {Layout} from "@/core/app";
 import "normalize.css";
-import "./globals.css";
+import "@/core/app/styles/globals.css";
 
 const cormorant = Cormorant({
   variable: "--font-Cormorant",

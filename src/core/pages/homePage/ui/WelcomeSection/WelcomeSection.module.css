@@ -17,7 +17,6 @@
     background: #d4c9c1;
     background: linear-gradient(54deg, #e8dccc 0%, #daa9a5 19.61%, #d78f89 53.19%, #c7958a 100%);
     background-clip: text;
-    background-clip: text;
 
     * {
       background: inherit;

@@ -1,7 +1,7 @@
 import s from "./Questions.module.css";
 import React, {FC} from "react";
 import cn from "classnames";
-import {Question} from "@/core/shared";
+import {Question} from "@/core/widgets/Questions/ui/Question/Question";
 
 export interface IQuestion {
   title: string;
@@ -59,47 +59,6 @@ const initQuestions: IQuestion[] = [
     text: [
       "Partner brands can create unique digital goods and experiences for Onmi® playerbase.",
       "AR technology allows for expanded interaction with partners' works.",
-    ],
-  },
-  {
-    title: "How does Onmi's® economy work?",
-    text: [
-      "Onmi® economy is based on tokens and resources that could only be mined by interacting with ORBs. These resources are then placed in circulation and used to create goods to fuel the internal economy.",
-      "Tokens are also circulating in Challenges and mini-games. A certain amount is stored and used for player rewards.",
-    ],
-  },
-  {
-    title: 'What is "The Grand Final"?',
-    text: [
-      "The Grand Final is an international competition between worthy Onmi® players.",
-      "Players all around the world can bet and watch live as the contestants overcome several rounds of challenges. We do not disclose the mechanics beforehand as to keep everyone on equal footing when the games commence.",
-      "The winner will be generously rewarded and will forever be remembered in Onmi's® hall of fame.",
-    ],
-  },
-  {
-    title: "Is Onmi® a game or a service?",
-    text: [
-      "It's both. Game elements are incorporated in game design mechanics, intriguing quests, standoffs and whole storylines.",
-      'The "Service" part is collaborating with brands, artists, clubs and events to provide a system of offline benefits for Onmi® players.',
-    ],
-  },
-  {
-    title: "How do I get clothes?",
-    text: [
-      "Players can craft various articles of clothing and sell them on the market. You can view all available collections and listings on the market.",
-      "Onmi® doesn't sell in-game clothes with the exception of the starter collection.",
-    ],
-  },
-  {
-    title: "What are the differences between Omi bodies?",
-    text: [
-      "There is a difference in stats, upgrade potential and which rarity of clothes they can wear. Higher class bodies will generate more loot for the player and will be much more versatile in the long run.",
-    ],
-  },
-  {
-    title: "Why blockchain and crypto?",
-    text: [
-      "Blockchain technology is used for additional security, and transparency for the user's assets and their transactions. It is also used to support the game economy and its players.",
     ],
   },
 ];

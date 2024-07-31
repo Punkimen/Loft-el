@@ -5,6 +5,7 @@ import photo_2 from "@/public/img/homePage/photos/photo_2.jpg";
 import photo_3 from "@/public/img/homePage/photos/photo_3.jpg";
 import Image from "next/image";
 import {ParallaxComponent} from "@/core/shared/ui/Parallax/Parallax";
+import arrow from "@/public/img/homePage/Arrow.svg";
 
 const images = [photo_1, photo_2, photo_3];
 
@@ -42,6 +43,9 @@ export const PhotosSection = () => {
           </Animate>
         ))}
       </ParallaxComponent>
+      <Animate className={s.arrow} as={"div"} anim={"bounce"} delay={0}>
+        <Image src={arrow} alt={arrow} />
+      </Animate>
     </section>
   );
 };

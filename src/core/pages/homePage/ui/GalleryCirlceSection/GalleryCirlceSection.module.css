@@ -1,5 +1,7 @@
 .gallery {
-  margin-bottom: 350px;
+  position: relative;
+  padding-bottom: 222px;
+  margin-bottom: 252px;
 }
 
 .wrapper {
@@ -46,4 +48,11 @@
   width: 100%;
   max-width: 390px;
   transform: translate(-50%, -50%);
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50%;
 }

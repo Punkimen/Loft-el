@@ -1,5 +1,7 @@
 .section {
-  padding-bottom: 400px;
+  position: relative;
+  padding-bottom: 360px;
+  margin-bottom: 140px;
   overflow: hidden;
 }
 
@@ -29,35 +31,35 @@
   overflow: hidden;
   clip-path: circle(50%);
 
-  &_first {
+  &_1 {
     position: absolute;
     left: -2.188vw;
   }
 
-  &_second {
+  &_2 {
     position: absolute;
     top: 222px;
     left: 29.531vw;
   }
 
-  &_third {
+  &_3 {
     position: absolute;
     left: 42.344vw;
   }
 
-  &_fourth {
+  &_4 {
     position: absolute;
     top: 80px;
     left: 50.99vw;
   }
 
-  &_fifth {
+  &_5 {
     position: absolute;
     top: 348px;
     left: 70.781vw;
   }
 
-  &_sixth {
+  &_6 {
     position: absolute;
     top: 116px;
     left: 86.875vw;
@@ -87,7 +89,14 @@
     color: white;
   }
 
-  > .text:nth-child(2) {
+  > :nth-child(2) {
     margin-top: 180px;
   }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50%;
 }

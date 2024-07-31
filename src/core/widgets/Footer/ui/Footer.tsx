@@ -6,7 +6,7 @@ export const Footer = () => {
   const links = [
     {
       href: "#",
-      text: "Главгая",
+      text: "Главная",
     },
     {
       href: "#",

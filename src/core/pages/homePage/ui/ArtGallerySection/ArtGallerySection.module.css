@@ -20,34 +20,46 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 110px;
+  height: 530px;
   text-align: center;
 }
 
 .img {
+  position: absolute;
+
   &:hover {
     z-index: 1;
+    transition-duration: 1s;
     transform: rotate(3deg) scale(1.1);
   }
 
-  &_first {
-    rotate: -17deg;
+  &_1 {
+    top: 53px;
+    left: toVw(-53);
+    transform: rotate(17deg);
   }
 
-  &_second {
-    rotate: 4deg;
+  &_2 {
+    left: toVw(420);
+    transform: rotate(-4deg);
   }
 
-  &_third {
-    rotate: -2deg;
+  &_3 {
+    top: 22px;
+    left: 50%;
+    transform: rotate(2deg);
+    translate: -50% 0;
   }
 
-  &_fourth {
-    rotate: -6deg;
+  &_4 {
+    left: toVw(1140);
+    transform: rotate(6deg);
   }
 
-  &_fifth {
-    rotate: 12deg;
+  &_5 {
+    top: 103px;
+    left: toVw(1600);
+    transform: rotate(-12deg);
   }
 }
 

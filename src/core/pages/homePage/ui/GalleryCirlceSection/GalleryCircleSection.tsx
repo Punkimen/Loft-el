@@ -17,6 +17,7 @@ import Image from "next/image";
 import {CSSProperties, useEffect, useRef, useState} from "react";
 import {useParallax} from "react-scroll-parallax";
 import s from "./GalleryCirlceSection.module.css";
+import arrow from "@/public/img/homePage/Arrow.svg";
 
 const images = [img_1, img_2, img_3, img_4, img_5, img_6, img_7, img_8, img_9, img_10, img_11, img_12];
 const setStyles = (index: number, size: number, totalImages: number): CSSProperties => {
@@ -72,6 +73,9 @@ export const GalleryCircleSection = () => {
           </Animate>
         </Title>
       </div>
+      <Animate className={s.arrow} as={"div"} anim={"bounce"} delay={0}>
+        <Image src={arrow} alt={arrow} />
+      </Animate>
     </section>
   );
 };

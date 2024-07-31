@@ -3,9 +3,9 @@ import {Animate, Text, Title} from "@/core/shared";
 
 import Image from "next/image";
 import cn from "classnames";
-import img_first from "@/public/img/homePage/art_gallery/img_1.webp";
-import img_second from "@/public/img/homePage/art_gallery/img_2.webp";
-import img_third from "@/public/img/homePage/art_gallery/img_3.webp";
+import img_1 from "@/public/img/homePage/art_gallery/img_1.webp";
+import img_2 from "@/public/img/homePage/art_gallery/img_2.webp";
+import img_3 from "@/public/img/homePage/art_gallery/img_3.webp";
 
 export const ArtGallerySection = () => {
   return (
@@ -19,11 +19,11 @@ export const ArtGallerySection = () => {
         </Title>
       </div>
       <div className={s["images-block"]}>
-        <Image className={cn(s.img, s.img_first)} src={img_second} alt={"img_2"} />
-        <Image className={cn(s.img, s.img_second)} src={img_first} alt={"img_1"} />
-        <Image className={cn(s.img, s.img_third)} src={img_second} alt={"img_2"} />
-        <Image className={cn(s.img, s.img_fourth)} src={img_third} alt={"img_3"} />
-        <Image className={cn(s.img, s.img_fifth)} src={img_third} alt={"img_3"} />
+        <Image className={cn(s.img, s.img_1)} src={img_2} alt={"img_2"} />
+        <Image className={cn(s.img, s.img_2)} src={img_1} alt={"img_1"} />
+        <Image className={cn(s.img, s.img_3)} src={img_2} alt={"img_2"} />
+        <Image className={cn(s.img, s.img_4)} src={img_3} alt={"img_3"} />
+        <Image className={cn(s.img, s.img_5)} src={img_3} alt={"img_3"} />
       </div>
       <div className={s.textColumn}>
         <Text className={s.text}>

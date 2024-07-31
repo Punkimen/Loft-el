@@ -3,10 +3,20 @@
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  padding: 40px;
+  padding: 40px 0;
   margin: 0 auto;
+  font-family: var(--font-SFPro);
   font-size: 14px;
   line-height: 27px;
+
+  a {
+    text-transform: uppercase;
+    transition: color ease-in-out 0.3s;
+
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
 }
 
 .nav-container {
@@ -22,15 +32,6 @@
 
   li {
     list-style: none;
-  }
-
-  a {
-    text-transform: uppercase;
-    transition: color ease-in-out 0.3s;
-
-    &:hover {
-      color: var(--color-secondary);
-    }
   }
 }
 
