@@ -1,4 +1,3 @@
-import s from "./ArtGallerySection.module.css";
 import {Animate, Text, Title} from "@/core/shared";
 
 import Image from "next/image";
@@ -6,6 +5,7 @@ import cn from "classnames";
 import img_1 from "@/public/img/homePage/art_gallery/img_1.webp";
 import img_2 from "@/public/img/homePage/art_gallery/img_2.webp";
 import img_3 from "@/public/img/homePage/art_gallery/img_3.webp";
+import s from "./ArtGallerySection.module.css";
 
 export const ArtGallerySection = () => {
   return (
