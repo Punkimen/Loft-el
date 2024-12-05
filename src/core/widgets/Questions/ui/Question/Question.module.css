@@ -1,10 +1,8 @@
+@import "@styles/variable.css";
+
 .question {
   position: relative;
   border-top: 1px solid #ffffff25;
-
-  &:last-child {
-    border-bottom: 1px solid #ffffff25;
-  }
 
   &.open {
     .body {
@@ -30,12 +28,11 @@
 }
 
 .title {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px;
   line-height: 1.4em;
 
-  @media (width <= 1200px) {
-    font-size: 14px;
+  @media (--md-medium) {
+    font-size: 16px;
   }
 }
 
@@ -68,8 +65,8 @@
   transition: cubic-bezier(0.03, 0.12, 0.14, 1) 0.8s;
   transition-property: opacity, height;
 
-  @media (width <= 1200px) {
-    font-size: 14px;
+  @media (--md-medium) {
+    font-size: 16px;
     line-height: 1.4em;
   }
 

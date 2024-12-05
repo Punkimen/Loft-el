@@ -1,0 +1,6 @@
+@custom-media --md-desktop (max-width: 1440px);
+@custom-media --md-laptop (max-width: 1200px);
+@custom-media --md-pad (max-width: 992px);
+@custom-media --md-medium (max-width: 768px);
+@custom-media --md-small (max-width: 568px);
+@custom-media --md-ex-small (max-width: 412px);

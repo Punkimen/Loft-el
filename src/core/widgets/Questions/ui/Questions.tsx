@@ -1,7 +1,8 @@
 import s from "./Questions.module.css";
-import React, {FC} from "react";
+import React, { FC } from "react";
 import cn from "classnames";
-import {Question} from "@/core/widgets/Questions/ui/Question/Question";
+import { Question } from "@/core/widgets/Questions/ui/Question/Question";
+import { Animate } from "@/core/shared";
 
 export interface IQuestion {
   title: string;
@@ -62,13 +63,15 @@ const initQuestions: IQuestion[] = [
     ],
   },
 ];
-const Questions: FC<{className?: string; questions?: IQuestion[]}> = ({className, questions}) => {
+const Questions: FC<{ className?: string; questions?: IQuestion[] }> = ({ className, questions }) => {
   const questionsForRender = questions ? questions : initQuestions;
 
   return (
     <div className={cn(s.questions, className)}>
       {questionsForRender.map((el, index) => {
-        return <Question key={index} title={el.title} text={el.text} />;
+        return <Animate anim={"fadeUp"} delay={index * 100}>
+          <Question key={index} title={el.title} text={el.text} />
+        </Animate>;
       })}
     </div>
   );

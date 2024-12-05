@@ -1,0 +1,14 @@
+@import "@styles/variable.css";
+
+.btn {
+  display: none;
+  margin: 120px auto 0;
+  padding: 23px 45px;
+  width: 193px;
+  background-color: var(--color-primary-hover);
+  border: none;
+
+  @media (--md-medium) {
+    display: block;
+  }
+}

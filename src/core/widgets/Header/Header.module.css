@@ -1,0 +1,66 @@
+@import "@styles/variable.css";
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 36px;
+  font-family: var(--font-SFPro);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  place-content: center center;
+  width: 160px;
+  height: 140px;
+  padding: 28px 25px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid rgb(255 255 255 / 15%);
+  border-top: none;
+  border-radius: 0 0 93px 93px;
+  transform: translateX(-50%);
+
+  @media (--md-medium) {
+    height: 110px;
+    padding-top: 0;
+  }
+}
+
+.handle {
+  font-weight: 500;
+  text-align: right;
+  @media (--md-medium) {
+    display: none;
+  }
+}
+
+.phone {
+  margin-bottom: 5px;
+  transition: color ease 0.3s;
+
+  &:hover {
+    color: var(--color-secondary);
+  }
+}
+
+.switch {
+  display: flex;
+  gap: 7px;
+  justify-content: flex-end;
+}
+
+.lang {
+  margin-top: 5px;
+  text-transform: uppercase;
+  transition: color ease 0.3s;
+
+  &:hover {
+    color: var(--color-secondary);
+  }
+}

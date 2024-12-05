@@ -1,0 +1,42 @@
+@import "@styles/variable.css";
+
+.root {
+  position: fixed;
+  top: 22px;
+  right: 20px;
+  z-index: 100;
+  display: none;
+
+  @media (--md-medium) {
+    display: block;
+  }
+}
+
+.burgerAnimation {
+  position: relative;
+  z-index: 100;
+}
+
+.burger {
+  width: 50px;
+  display: grid;
+  gap: 7px;
+  transition: gap margin 0.3s ease;
+  span {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+
+  &.active {
+    margin-top: 10px;
+    gap: 0;
+    span {
+      transform: rotate(45deg);
+      &:first-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

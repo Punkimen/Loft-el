@@ -1,0 +1,101 @@
+@import "@styles/variable.css";
+
+.gallery {
+  position: relative;
+  padding-bottom: 222px;
+  margin-bottom: 252px;
+
+  @media (--md-medium) {
+    margin-bottom: 130px;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1256px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+
+  @media (--md-medium) {
+    height: 765px;
+  }
+}
+
+.parallax {
+  transform-origin: 50% 50%;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  @media (--md-medium) {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 766px;
+  }
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+  animation: rotation 30s infinite linear;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.img {
+  position: absolute;
+  display: block;
+  width: 172px;
+  height: 172px;
+  transform: translate(100%, -50%);
+
+  @media (--md-pad) {
+    width: 105px;
+    height: 105px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 19px;
+    transform-origin: 50% 50%;
+  }
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 390px;
+  transform: translate(-50%, -50%);
+
+  @media (--md-medium) {
+    width: 319px;
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50%;
+  margin: 0;
+
+  @media (--md-medium) {
+    margin-top: 150px;
+    text-align: center;
+  }
+}

@@ -1,16 +1,16 @@
 "use client";
 
-import React, {FC, useEffect, useRef, useState} from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
 import s from "./Question.module.css";
 import cn from "classnames";
-import {useWindowWidth} from "@/core/shared/hooks/useWindowWidth";
+import { useWindowWidth } from "@/core/shared/hooks/useWindowWidth";
 
 interface IQuestionProps {
   title: string;
   text: string[];
 }
 
-export const Question: FC<IQuestionProps> = React.memo(({title, text}) => {
+export const Question: FC<IQuestionProps> = React.memo(({ title, text }) => {
   const [open, setOpen] = useState(false);
   const [height, setHeight] = useState(0);
   const ref: React.RefObject<HTMLDivElement> = useRef(null);
@@ -39,10 +39,10 @@ export const Question: FC<IQuestionProps> = React.memo(({title, text}) => {
           </svg>
         </div>
       </div>
-      <div style={{height: `${!open ? 0 : height}px`}} className={s.body}>
+      <div style={{ height: `${!open ? 0 : height}px` }} className={s.body}>
         <div ref={ref} className={s.inner}>
           {text.map((el, index) => {
-            return <div key={index} dangerouslySetInnerHTML={{__html: el}} />;
+            return <div key={index} dangerouslySetInnerHTML={{ __html: el }} />;
           })}
         </div>
       </div>

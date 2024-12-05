@@ -1,14 +1,12 @@
-@custom-media --md-desktop (max-width: 1440px);
-@custom-media --md-laptop (max-width: 1200px);
-@custom-media --md-pad (max-width: 992px);
-@custom-media --md-medium (max-width: 768px);
-@custom-media --md-small (max-width: 568px);
-@custom-media --md-ex-small (max-width: 412px);
-
+/* @import url("normalize.css"); */
+@import "variable.css";
 
 :root {
-  --color-bg: #071c11;
-  --color-secondary: #87b095;
+  --color-bg: #08071c;
+  --color-gradient: linear-gradient(54deg, #e8dccc 0%, #daa9a5 19.61%, #d78f89 53.19%, #c7958a 100%);
+  --color-primary: #ff9f9f;
+  --color-primary-hover: #482330;
+  --color-secondary: #8797b0;
 }
 
 *,
@@ -59,10 +57,33 @@ li {
 
 h1 {
   font-size: 130px;
+  font-weight: 400;
+
+  @media (--md-medium) {
+    font-size: 63px;
+  }
 }
 
 h2 {
+  font-size: 160px;
+  font-weight: 400;
+
+  @media (--md-desktop) {
+    font-size: 100px;
+  }
+
+  @media (--md-medium) {
+    font-size: 56px;
+  }
+}
+
+h3 {
   font-size: 60px;
+  font-weight: 400;
+
+  @media (--md-medium) {
+    font-size: 50px;
+  }
 }
 
 main {

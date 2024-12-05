@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -21,7 +17,15 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@/public/*": ["public/*"]
+      "@/public/*": ["public/*"],
+      "@styles/*": ["./src/core/app/styles/*"],
+
+      "@app/*": ["./src/core/app/*"],
+      "@entities/*": ["./src/core/entities/*"],
+      "@features/*": ["./src/core/features/*"],
+      "@pages/*": ["./src/core/pages/*"],
+      "@shared/*": ["./src/core/shared/*"],
+      "@widgets/*": ["./src/core/widgets/*"]
     },
 
     "plugins": [
@@ -30,13 +34,6 @@
       }
     ]
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }

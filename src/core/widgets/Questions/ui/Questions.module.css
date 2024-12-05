@@ -1,0 +1,7 @@
+.questions {
+  padding: 20px;
+
+  span:last-child {
+    border-bottom: 1px solid #ffffff25;
+  }
+}

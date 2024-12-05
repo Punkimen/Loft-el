@@ -1,0 +1,38 @@
+@import "@styles/variable.css";
+
+.root {
+  a {
+    margin-top: 60px;
+  }
+}
+
+.text {
+  text-align: center;
+  font-size: 20px;
+}
+
+.title {
+  margin-top: 66px;
+  color: transparent;
+  background-color: var(--color-primary);
+  background: var(--color-gradient);
+  background-clip: text;
+
+  @media (--md-medium) {
+    margin-top: 10px;
+    font-size: 60px;
+  }
+}
+
+.descr {
+  margin: 20px auto 0;
+  width: 560px;
+  text-align: center;
+  color: var(--color-secondary);
+
+  @media (--md-medium) {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 318px;
+  }
+}

@@ -1,0 +1,47 @@
+@import "@styles/variable.css";
+
+.welcome {
+  margin-bottom: 210px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #d78f89ff;
+
+  @supports (--css: variables) {
+    color: transparent;
+    background-color: var(--color-primary);
+    background: var(--color-gradient);
+    background-clip: text;
+
+    * {
+      background: inherit;
+    }
+  }
+
+  @media (--md-medium) {
+    margin: 0 auto;
+    width: 360px;
+  }
+}
+
+.decor {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  font-family: var(--font-Artist);
+  font-size: 67px;
+  color: var(--color-secondary);
+  rotate: -11deg;
+
+  @media (--md-medium) {
+    top: 10px;
+    font-size: 46px;
+  }
+}

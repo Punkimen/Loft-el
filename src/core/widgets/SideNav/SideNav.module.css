@@ -1,0 +1,59 @@
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform: translateX(100vw);
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: var(--font-SFPro);
+  transition: transform 0.3s ease;
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.nav {
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.list {
+  text-align: center;
+  li {
+    line-height: 1.35em;
+    list-style: none;
+
+    &:nth-child(3n) {
+      margin-bottom: 15px;
+    }
+  }
+
+  a {
+    transition: color ease-in-out 0.3s;
+  }
+}
+
+.phone {
+  margin: 0 auto;
+  margin-bottom: 5px;
+  transition: color ease 0.3s;
+}
+
+.switch {
+  margin: 0 auto;
+  display: flex;
+  gap: 7px;
+}
+
+.lang {
+  text-transform: uppercase;
+  transition: color ease 0.3s;
+}

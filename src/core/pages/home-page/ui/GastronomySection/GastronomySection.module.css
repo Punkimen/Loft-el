@@ -1,0 +1,156 @@
+@import "@styles/variable.css";
+
+.section {
+  padding-bottom: 340px;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  max-width: 900px;
+  height: 272px;
+  margin: 0 auto;
+}
+
+.title {
+  width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+
+  @media (--md-medium) {
+    min-width: 380px;
+  }
+}
+
+.images-block {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2214px;
+  height: 654px;
+  margin-bottom: 110px;
+
+  display: flex;
+  justify-content: end;
+
+  @media (--md-desktop) {
+    width: 1600px;
+  }
+
+  @media (--md-medium) {
+    left: auto;
+    transform: translateX(0);
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    height: 224px;
+  }
+}
+
+.img {
+  position: absolute;
+  top: 50%;
+  width: 427px;
+  height: 427px;
+  overflow: hidden;
+  clip-path: circle(50%);
+  transform: translate(0, -50%);
+
+  @media (--md-desktop) {
+    width: 380px;
+    height: 380px;
+  }
+
+  @media (--md-medium) {
+    position: relative;
+    height: 224px;
+    width: 224px;
+    object-fit: cover;
+  }
+
+  &_first {
+    left: 290px;
+
+    @media (--md-desktop) {
+      left: 190px;
+    }
+
+    @media (--md-medium) {
+      left: auto;
+    }
+  }
+
+  &_second {
+    left: 716px;
+
+    @media (--md-desktop) {
+      left: 570px;
+    }
+
+    @media (--md-medium) {
+      left: auto;
+    }
+  }
+
+  &_third {
+    right: 0;
+
+    @media (--md-desktop) {
+      right: -80px;
+    }
+
+    @media (--md-medium) {
+      right: auto;
+    }
+  }
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  @media (--md-medium) {
+    display: none;
+  }
+
+  &_small {
+    right: 427px;
+
+    @media (--md-desktop) {
+      right: 300px;
+      width: 250px;
+    }
+  }
+
+  &_medium {
+    left: 0;
+
+    @media (--md-desktop) {
+      width: 300px;
+    }
+  }
+
+  &_big {
+    left: 845px;
+
+    @media (--md-desktop) {
+      width: 500px;
+      left: 650px;
+    }
+  }
+}
+
+.textColumn {
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 133%;
+  text-align: center;
+
+  @media (--md-medium) {
+    text-align: left;
+  }
+}
